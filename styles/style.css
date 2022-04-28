@@ -84,6 +84,12 @@ body {
   overflow: hidden;
 }
 
+.main-logo-wrapper {
+  display: block;
+  max-width: min-content;
+  max-height: min-content;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
