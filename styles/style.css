@@ -416,7 +416,7 @@ body {
     padding: 20px;
   }
 
-  .nav-list-opened {
+  .nav-burger .nav-list-opened {
     left: 20px;
   }
 
