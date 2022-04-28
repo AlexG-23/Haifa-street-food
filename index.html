@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="page-header">
+        <nav class="main-nav">
+            <img src="images/logo.svg" width="91" height="76" alt="לוגו ראשי" class="main-logo">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">אוכל</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">אירועים</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">מידע</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">אודות</a>
+                </li>
+            </ul>
+            <div class="nav-burger" type="button">
+                <button class="burger-btn" onclick="burgerOpen()">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">אוכל</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">אירועים</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">מידע</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">אודות</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-main-content">
+            <div class="text-wrapper">
+                <p class="text">Haifa street food</p>
+                <p>אוכל נהדר מכל העולם.</p>
+                <a class="button" href="#">שעות פתיחה</a>
+            </div>
+            <div class="header-image-wrapper">
+                <span class="header-image"></span>
+                <span class="header-image"></span>
+                <span class="header-image"></span>
+            </div>
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="section about-section">
+            <div class="section-wrapper">
+                <h2 class="title">לחוות את אוכל הרחוב הטוב ביותר בחיפה</h2>
+                <p class="subtitle">
+                    חיפה פוד ממוקמת בעיר התחתית. הפקה לנקודת מפגש לרבויות שונות ומציעות יחודיות עם מטבח בינלאומי
+                    ולא פשוט ומשקאות במקום מלא באנשים ואווירה טובה.
+                    יש לנו 16 דוכני מזון מגישים אוכל מכל קצוות העולם - וארבעה ברים שונים.
+                    <br>
+                    ברוכים הבאים לכור ההיתוך של העיר.
+                </p>
+                <a href="#" class="button">האוכל שלנו</a>
+            </div>
+            <div class="about-image-wrapper">
+              <p class="about-image"></p>
+              <p class="about-image"></p>
+              <p class="about-image"></p>
+              <p class="about-image"></p>
+            </div>
+        </section>
+    </main>
+    <script>
+      let burger = document.querySelector(".nav-burger .nav-list");
+      function burgerOpen() {
+        burger.classList.toggle("nav-list-opened");
+      }
+    </script>
+</body>
+</html>
