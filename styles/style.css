@@ -154,18 +154,22 @@ body {
 
 .nav-burger .nav-item:nth-child(1) {
   animation-delay: -.2s;
+  -webkit-animation-delay: -.2s;
 }
 
 .nav-burger .nav-item:nth-child(2) {
   animation-delay: -.1s;
+  -webkit-animation-delay: -.1s;
 }
 
 .nav-burger .nav-item:nth-child(3) {
   animation-delay: -.2s;
+  -webkit-animation-delay: -.2s;
 }
 
 .nav-burger .nav-item:nth-child(4) {
   animation-delay: -.1s;
+  -webkit-animation-delay: -.1s;
 }
 
 .nav-burger .nav-list-opened {
