@@ -18,17 +18,23 @@
 }
 
 @keyframes spinner-outside {
-  from {transform: rotate(0)}
+  from {transform: rotate(0);}
   to {transform: rotate(360deg);}
 }
 @keyframes spinner-center {
-  from {transform: rotate(0)}
+  from {transform: rotate(0);}
   to {transform: rotate(-360deg);}
 }
 @keyframes spinner-inner {
-  from {transform: rotate(0)}
+  from {transform: rotate(0);}
   to {transform: rotate(360deg);}
 }
+
+@keyframes sticks {
+  from {transform: rotate(140deg);}
+  to {transform: rotate(150deg);}
+}
+
 *,
 *::before,
 *::after {
@@ -282,7 +288,7 @@ body {
   width: 310px;
   height: 310px;
   background-image: url("../images/big-dish.png");
-  animation: spinner-center 15s infinite linear;
+  animation: spinner-center 25s infinite linear;
 }
 
 .about-image:nth-child(2) {
@@ -291,7 +297,7 @@ body {
   width: 146px;
   height: 146px;
   background-image: url("../images/medium-dish.png");
-  animation: spinner-inner 12s infinite linear;
+  animation: spinner-inner 22s infinite linear;
 }
 
 .about-image:nth-child(3) {
@@ -300,7 +306,7 @@ body {
   width: 115px;
   height: 115px;
   background-image: url("../images/small-dish.png");
-  animation: spinner-outside 7s infinite linear;
+  animation: spinner-outside 17s infinite linear;
 }
 
 .about-image:nth-child(4) {
@@ -309,7 +315,20 @@ body {
   width: 115px;
   height: 115px;
   background-image: url("../images/small-dish-1.png");
-  animation: spinner-center 5s infinite linear;
+  animation: spinner-center 15s infinite linear;
+}
+
+.about-image:nth-child(5) {
+  left: 150px;
+  bottom: 150px;
+  width: 342px;
+  height: 82px;
+  background-image: url("../images/sticks.png");
+  transform: rotate(145deg);
+  
+  animation: sticks .8s infinite linear;
+  animation-direction: alternate-reverse;
+
 }
 
 @media (max-width: 1200px) {
@@ -320,6 +339,10 @@ body {
 
   .about-image:nth-child(3) {
     opacity: 0.2;
+  }
+
+  .about-image:nth-child(5) {
+    bottom: 70px;
   }
 }
 
@@ -350,6 +373,13 @@ body {
 
   .about-image {
     opacity: 0.2;
+  }
+}
+
+@media (max-width: 565px) {
+  .about-image:nth-child(5) {
+    left: 40px;
+    bottom: 55px;
   }
 }
 
