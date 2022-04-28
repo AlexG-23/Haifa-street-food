@@ -313,7 +313,7 @@ body {
     transition: .5s;
   }
 
-  .main-logo + .nav-list {
+  .main-logo-wrapper + .nav-list {
     display: none;
   }
 
