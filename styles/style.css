@@ -241,6 +241,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   transition: .4s;
+  z-index: -1;
 }
 
 .header-image:nth-of-type(1) {
