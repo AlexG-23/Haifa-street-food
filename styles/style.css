@@ -592,10 +592,6 @@ body {
     opacity: .6;
   }
 
-  .picture-wrapper {
-    /* background-attachment: scroll; */
-  }
-
   .nigth-life-section .section-wrapper::after {
     bottom: -55px;
     background-size: contain;
