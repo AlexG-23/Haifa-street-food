@@ -394,6 +394,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
   filter: blur(4px);
 }
 
