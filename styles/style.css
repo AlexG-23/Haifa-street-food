@@ -382,11 +382,14 @@ body {
 .downcity-section {
   position: relative;
   padding: 0;
+  margin: 0;
   overflow: hidden;
   transition: .4s;
 }
 
 .picture-wrapper {
+  padding: 0;
+  margin: 0;
   width: 100%;
   min-height: 50vh;
   background-image: url("../images/downcity-picture.jpg");
@@ -398,18 +401,22 @@ body {
   filter: blur(4px);
 }
 
-.downcity-section::before {
-  content: "בואו הצטרפו אלינו וגלו את העולם שלנו!";
-  max-width: 780px;
+.downcity-section p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
   position: absolute;
-  margin: 20px;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
   
   letter-spacing: 0.1em;
   color: #ffffff;
   text-shadow: 0px 0px 8px #000000;
-  font-size: 72px;
+  font-size: 52px;
   font-weight: 700;
   line-height: 86px;
+  text-align: center;
   z-index: 1;
 }
 
@@ -436,6 +443,72 @@ body {
   z-index: -1;
 }
 
+.nigth-life-section + .section {
+  padding: 0;
+}
+
+.night-life-picture-wrapper {
+  width: 100%;
+  min-height: 70vh;
+  background-image: url("../images/nightlife-party.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position: center;
+}
+
+.page-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+  align-items: flex-start;
+  background-color: #a1d4a4;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.shedule {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right {
+
+  text-align: center;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 80px;
+  text-align: center;
+}
+
+.footer-navigation-item .nav-link {
+  text-decoration: underline;
+}
+
+
 @media (max-width: 1200px) {
 
   .title {
@@ -459,6 +532,10 @@ body {
 
   .nigth-life-section .section-wrapper::after {
     opacity: 0.4;
+  }
+
+  .downcity-section p {
+    font-size: 30px;
   }
 }
 
@@ -490,6 +567,13 @@ body {
   }
 }
 
+@media (max-width: 680px) {
+  .downcity-section p {
+    font-size: 22px;
+  }
+}
+
+
 @media (max-width: 565px) {
   .about-image:nth-child(5) {
     left: 40px;
@@ -509,7 +593,7 @@ body {
   }
 
   .picture-wrapper {
-    background-attachment: scroll;
+    /* background-attachment: scroll; */
   }
 
   .nigth-life-section .section-wrapper::after {
@@ -538,9 +622,4 @@ body {
     padding: 20px;
     border-width: 20px;
   }
-
-  .downcity-section::before {
-    font-size: 32px;
-  }
-  
 }
