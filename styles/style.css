@@ -513,6 +513,11 @@ body {
   .picture-wrapper {
     background-attachment: scroll;
   }
+
+  .nigth-life-section .section-wrapper::after {
+    bottom: -55px;
+    background-size: contain;
+  }
 }
 
 
@@ -539,4 +544,5 @@ body {
   .downcity-section::before {
     font-size: 32px;
   }
+  
 }
