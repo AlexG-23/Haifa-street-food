@@ -390,7 +390,7 @@ body {
   min-height: 50vh;
   background-image: url("../images/downcity-picture.jpg");
   background-size: cover;
-  -webkit-background-attachment: fixed;
+  -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
