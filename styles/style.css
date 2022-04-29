@@ -233,7 +233,7 @@ body {
 
 .header-image {
   position: absolute;
-  top: 0;
+  top: -40px;
   left: 0;
   display: inline-block;
   width: 400px;
@@ -241,7 +241,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   transition: .4s;
-  z-index: -1;
 }
 
 .header-image:nth-of-type(1) {
@@ -489,8 +488,6 @@ body {
     max-width: 360px;
     margin: 40px 70px;
   }
-
-
 }
 
 @media (max-width: 565px) {
