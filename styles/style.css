@@ -393,8 +393,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  -webkit-overflow-scrolling: fixed;
-  -webkit-background-size: cover;
   filter: blur(4px);
 }
 
@@ -459,7 +457,7 @@ body {
     font-weight: 700;
     line-height: 52px;
     max-width: 360px;
-    margin: 70px;
+    margin: 40px 70px;
   }
 
 }
