@@ -509,6 +509,10 @@ body {
   .header-image-wrapper .header-image:nth-of-type(3) {
     opacity: .6;
   }
+
+  .picture-wrapper {
+    background-attachment: scroll;
+  }
 }
 
 
