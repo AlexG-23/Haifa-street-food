@@ -44,7 +44,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  transition: 0.4s;
 }
 
 .visually-hidden {
@@ -81,11 +80,11 @@ body {
 }
 
 .button:hover {
-  box-shadow: 0px 0px 10px 2px #9ce15f;
+  box-shadow: 0px 0px 5px 2px #9ce15f;
 }
 
 .button:active {
-  background-color: #9ce15f;
+  box-shadow: inset 0 0 5px black;
 }
 
 .page-header {
@@ -99,6 +98,11 @@ body {
   display: block;
   max-width: min-content;
   max-height: min-content;
+  color: #ffffff;
+}
+
+.main-logo-wrapper:hover {
+  color: #e6a1c2;
 }
 
 .main-nav {
@@ -128,7 +132,9 @@ body {
 }
 
 .nav-link:hover {
+  color: #e6a1c2;
   text-decoration: underline;
+  transition: 0;
 }
 
 .burger-btn {
@@ -149,27 +155,30 @@ body {
 
 .nav-burger .nav-item {
   animation: burger-menu-item .6s;
-  /* animation-delay: -1s; */
 }
 
 .nav-burger .nav-item:nth-child(1) {
   animation-delay: -.2s;
   -webkit-animation-delay: -.2s;
+  -moz-animation-delay: -.2s;
 }
 
 .nav-burger .nav-item:nth-child(2) {
   animation-delay: -.1s;
   -webkit-animation-delay: -.1s;
+  -moz-animation-delay: -.1s;
 }
 
 .nav-burger .nav-item:nth-child(3) {
   animation-delay: -.2s;
   -webkit-animation-delay: -.2s;
+  -moz-animation-delay: -.2s;
 }
 
 .nav-burger .nav-item:nth-child(4) {
   animation-delay: -.1s;
   -webkit-animation-delay: -.1s;
+  -moz-animation-delay: -.1s;
 }
 
 .nav-burger .nav-list-opened {
@@ -180,6 +189,7 @@ body {
   flex-direction: column;
   text-align: left;
   list-style-type: none;
+  z-index: 1;
 }
 
 .burger-line {
@@ -230,6 +240,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-position: center;
+  transition: .4s;
 }
 
 .header-image:nth-of-type(1) {
@@ -264,6 +275,7 @@ body {
   max-width: 250px;
   background: -webkit-linear-gradient(145deg, #E6A1C2 -12.35%, rgba(230, 161, 194, 0) 166.16%);
   background-clip: text;
+  text-shadow: 2px -2px 15px #e6a1c2;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 64px;
@@ -284,11 +296,14 @@ body {
   align-items: flex-start;
 }
 
+.pink-bordered-section {
+  background-color: #13103B;
+  border: 40px solid #C5789D;
+}
+
 .about-section {
   position: relative;
   display: flex;
-  background-color: #13103B;
-  border: 40px solid #C5789D;
   color: #ffffff;
   z-index: 1;
   overflow: hidden;
@@ -312,6 +327,7 @@ body {
   background-repeat: no-repeat;
   background-size: initial;
   z-index: -1;
+  transition: .4s;
 }
 
 .about-image:nth-child(1) {
@@ -360,7 +376,39 @@ body {
   
   animation: sticks .8s infinite linear;
   animation-direction: alternate-reverse;
+}
 
+.downcity-section {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.picture-wrapper {
+  width: 100%;
+  min-height: 50vh;
+  background-image: url("../images/downcity-picture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(4px);
+}
+
+.downcity-section::before {
+  content: "בואו הצטרפו אלינו וגלו את העולם שלנו!";
+  max-width: 780px;
+  position: absolute;
+  margin: 20px;
+  
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-shadow: 0px 0px 8px #000000;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 86px;
+  z-index: 1;
 }
 
 @media (max-width: 1200px) {
@@ -399,13 +447,19 @@ body {
   .nav-burger {
     display: inline-block;
   }
-  .header-image-wrapper {
-    opacity: .2;
-  }
 
   .about-image {
     opacity: 0.2;
   }
+
+  .downcity-section::before {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+    max-width: 360px;
+    margin: 70px;
+  }
+
 }
 
 @media (max-width: 565px) {
@@ -413,7 +467,21 @@ body {
     left: 40px;
     bottom: 55px;
   }
+  
+  .header-image-wrapper .header-image:nth-of-type(1) {
+    opacity: .4;
+  }
+
+  .header-image-wrapper .header-image:nth-of-type(2) {
+    opacity: .5;
+  }
+
+  .header-image-wrapper .header-image:nth-of-type(3) {
+    opacity: .6;
+  }
 }
+
+
 
 @media (max-width: 420px) {
   .page-header {
@@ -429,7 +497,12 @@ body {
     padding: 0;
   }
 
-  .about-section {
+  .pink-bordered-section {
     padding: 20px;
+    border-width: 20px;
+  }
+
+  .downcity-section::before {
+    font-size: 42px;
   }
 }
