@@ -159,6 +159,10 @@ body {
   transition: .4s;
 }
 
+.burger-btn:hover .burger-line {
+  background-color: #e6a1c2;
+}
+
 .nav-burger {
   display: none;
   margin-right: auto;
