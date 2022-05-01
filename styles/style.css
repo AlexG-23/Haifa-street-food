@@ -152,6 +152,11 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: .4s;
+}
+
+.burger-line {
+  transition: .4s;
 }
 
 .nav-burger {
