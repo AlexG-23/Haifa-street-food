@@ -485,7 +485,7 @@ body {
   background-image: url("../images/nightlife-party.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment:fixed;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -724,5 +724,13 @@ body {
   .pink-bordered-section {
     padding: 20px;
     border-width: 20px;
+  }
+
+  .picture-wrapper {
+    background-size: cover;
+  }
+
+  .night-life-picture-wrapper {
+    background-size: initial;
   }
 }
