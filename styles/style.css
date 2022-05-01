@@ -155,12 +155,12 @@ body {
   transition: .4s;
 }
 
-.burger-line {
-  transition: .4s;
-}
-
 .burger-btn:hover .burger-line {
   background-color: #e6a1c2;
+}
+
+.burger-line {
+  transition: .4s;
 }
 
 .nav-burger {
