@@ -589,6 +589,10 @@ body {
   background-size: 40px 40px;
 }
 
+.social-item:hover {
+  opacity: 0.6;
+}
+
 .social-item:nth-child(1) .social-link {
   display: block;
   background-image: url("../images/new-instagram-logo-white-border-icon-png-large\ 1.svg");
@@ -704,7 +708,7 @@ body {
   }
 
   .nigth-life-section .section-wrapper::after {
-    bottom: -55px;
+    bottom: -80px;
     background-size: contain;
   }
 
