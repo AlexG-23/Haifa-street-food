@@ -586,19 +586,17 @@ body {
   height: 40px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 40px 40px;
 }
 
 .social-item:nth-child(1) .social-link {
   display: block;
   background-image: url("../images/new-instagram-logo-white-border-icon-png-large\ 1.svg");
-  background-size: 40px 40px;
 }
 
 .social-item:nth-child(2) .social-link {
   display: block;
   background-image: url("../images/Facebook-logo-blue-circle-large-white-f\ 1.svg");
-  background-size: 48px 48px;
-  background-position: bottom;
 }
 
 @media (max-width: 1200px) {
