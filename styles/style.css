@@ -179,21 +179,21 @@ body {
 .burger-open-first-line {
   position: fixed;
   top: 46px;
-  left: 40px;
+  left: 45px;
   transform: rotate(45deg);
 }
 
 .burger-open-second-line {
   position: fixed;
   top: 46px;
-  left: 40px;
+  left: 45px;
   transform: scale(0);
 }
 
 .burger-open-third-line {  
   position: fixed;
   top: 46px;
-  left: 40px;
+  left: 45px;
   transform: rotate(-45deg);
 }
 
