@@ -744,16 +744,14 @@ body {
   }
 }
 
-
-
 @media (max-width: 420px) {
   .page-header {
     padding: 20px;
   }
 
-  .nav-burger .nav-list-opened {
+  /* .nav-burger .nav-list-opened {
     left: 20px;
-  }
+  } */
 
   .text-wrapper {
     margin: 0;
