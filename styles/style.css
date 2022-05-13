@@ -860,6 +860,16 @@ body {
   .page-footer .container {
     grid-template-columns: 1fr;
   }
+
+  .food-title {
+    padding: 0;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .food-description {
+    padding: 0;
+  }
 }
 
 @media (max-width: 420px) {
@@ -886,4 +896,5 @@ body {
     background-size: initial;
     background-attachment: scroll;
   }
+
 }
