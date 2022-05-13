@@ -897,4 +897,8 @@ body {
     background-attachment: scroll;
   }
 
+  .enter-section {
+    padding: 50px;
+  }
+
 }
