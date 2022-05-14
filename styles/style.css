@@ -592,6 +592,10 @@ body {
   overflow: hidden;
 }
 
+.restaurant-btn {
+  display: block;
+}
+
 .restaurant-btn:hover .food-image-description {
   color: #e6a1c2;
 }
@@ -903,21 +907,20 @@ body {
     padding: 50px;
   }
 
-  .section  {
+  .main-body .section  {
     width: 100%;
   }
 
-  .section {
+  .main-body .section {
     opacity: 0;
     transform: translateY(20px);
   }
 
-  .section.element-show {
+  .main-body .section.element-show {
     opacity: 1;
     transition: all 1.5s;
     transform: translateY(0%);
   }
-
 }
 
 
