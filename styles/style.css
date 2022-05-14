@@ -889,12 +889,12 @@ body {
 
   .picture-wrapper {
     background-size: cover;
-    background-attachment: scroll;
+    /* background-attachment: scroll; */
   }
 
   .night-life-picture-wrapper {
     background-size: initial;
-    background-attachment: scroll;
+    /* background-attachment: scroll; */
   }
 
   .enter-section {
