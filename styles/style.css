@@ -818,6 +818,22 @@ body {
   .social-list {
     margin: auto;
   }
+
+  .restaurant-item {
+    width: 300px;
+    height: 170px;
+  }
+
+  .restaurant-item {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .restaurant-item.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 770px) {
@@ -825,6 +841,7 @@ body {
   .restaurants-container {
     grid-template-columns: 1fr;
   }
+  
 }
 
 @media (max-width: 680px) {
@@ -918,7 +935,7 @@ body {
 
   .main-body .section.element-show {
     opacity: 1;
-    transition: all 1.5s;
+    transition: all 1s;
     transform: translateY(0%);
   }
 }

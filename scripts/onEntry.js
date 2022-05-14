@@ -14,3 +14,9 @@ function onEntry(entry) {
   for (let elm of elements) {
     observer.observe(elm);
   }
+
+  let restaurants = document.querySelectorAll('.restaurant-item');
+
+  for (let rest of restaurants) {
+    observer.observe(rest);
+  }
