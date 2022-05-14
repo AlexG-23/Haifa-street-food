@@ -631,6 +631,11 @@ body {
   flex-wrap: wrap;
   padding: 40px;
   justify-items: center;
+
+  transition-timing-function: ease;
+  transition-duration: 0.9s;
+  transition-delay: 0.404082s;
+  transition-property: opacity;
 }
 
 .page-footer .container  div {
@@ -898,4 +903,23 @@ body {
     padding: 50px;
   }
 
+  .section  {
+    width: 100%;
+  }
+
+  .section {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .section.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+
 }
+
+
+
+

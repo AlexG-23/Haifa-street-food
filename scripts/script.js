@@ -11,3 +11,22 @@ function burgerOpen() {
     secondLine.classList.toggle("burger-open-second-line");
     thirdLine.classList.toggle("burger-open-third-line");
 }
+
+
+
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
+    }
+  });
+}
+
+let options = {
+  threshold: [0.8] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.section', '.page-footer .container');
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
