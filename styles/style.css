@@ -270,6 +270,7 @@ body {
 
 .header-main-content {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   z-index: 1;
 }
@@ -278,14 +279,12 @@ body {
   position: relative;
   display: block;
   margin-top: 60px;
-  margin-left: 100px;
   width: 400px;
   height: 400px;
 }
 
 .header-image {
   position: absolute;
-  top: -40px;
   left: 0;
   display: inline-block;
   width: 400px;
@@ -314,7 +313,6 @@ body {
 }
 
 .text-wrapper {
-  margin: 0 auto;
   padding: 40px;
   font-family: var(--main-font);
   color: #E6A1C2;
